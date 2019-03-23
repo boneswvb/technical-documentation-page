@@ -1,0 +1,96 @@
+/* All imports from other websites */
+
+@import "https://fonts.googleapis.com/css?family=Lobster";
+@import "https://fonts.googleapis.com/css?family=Tangerine";
+
+/* global and nav setup*/
+
+nav {
+    position: fixed;
+    top: 30;
+    left:0px;
+    min-height: 25px;
+    width: 300px;
+}
+
+.navheader {
+    font-family: Lobster;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px
+    width: 300px;
+}
+
+nav ul {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+nav li {
+    padding: 10px;
+    margin: 10px 0;
+    list-style: none;
+    border: 1px black solid;
+    border-radius: 15px;
+    }
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: Lobster, Arial, Helvetica, sans-serif;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: Lobster, Arial, Helvetica, sans-serif;
+    font-size: 38px;
+}
+
+h3 {
+    font-family: Tangerine, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+h4 {
+   font-family: Tangerine, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 120%;
+}
+
+table {
+    width: 80%;
+    @media (max-width: 250px) {
+        th {
+            font-size: 20px
+        }
+    }
+}
+
+td {
+    text-align: center;
+}
+
+/* main setup*/
+main {
+    margin-left: 350px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+/* footer setup*/
+
+.footer {
+    margin-left: 350px;
+    text-align: center;
+}

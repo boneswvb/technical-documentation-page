@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation Page</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>
+    <div>
+        <nav id="navbar">
+            <header class="navheader">Java script <br> Landing page project</header><!--header for navbar-->
+            <ul>
+
+                <li><a class="nav-link" href="#Introduction_to_my_JacaScript_page" rel="internal">
+            Introduction to my JacaScript page</a></li>
+
+                <li><a class="nav-link" href="#Data_types" rel="internal">
+            Data types</a></li>
+
+                <li><a class="nav-link" href="#Comparison_operators" rel="internal">
+            Comparison operators</a></li>
+
+                <li><a class="nav-link" href="#Math_operators" rel="internal">
+            Math operators</a></li>
+
+                <li><a class="nav-link" href="#Assignment_operators" rel="internal">
+           Assignment operators</a></li>
+
+            </ul><!--ul for navbar-->
+        </nav>
+        <!--navbar-->
+    </div><!--navbar-->
+    <div>
+        <main class="main-doc" id="main-doc">
+            
+            <article>
+                <section class="main-section" id="Introduction_to_my_JacaScript_page">
+                    <header><h1>Introduction to my JacaScript page</h1></header>
+                    <p>This page is made as a project for FreeCodeCamp. I will not duplicate the project example but list a couple of different things that are used when coding with JavaScript.</p>
+                    <p>My reference will be the training that is provided by <a href="https://javascript.info" target="_blank">JavaScript.info</a>.</p>
+                    <p>Since I’m still a student you should not accept that my explanations are 100% correct and I advise that you do some research yourself for more detail.</p>
+                    <p>You can make use of <a href="https://www.freecodecamp.org/" target="blank">FreeCodeCamp</a> and <a href="https://javascript.info" target="_blank">JavaScript.info</a> as a reliable source of information.</p>
+
+                    <ul>
+
+                        <li>
+                            <h2>Topics to be covered</h2>
+                        </li>
+                        <li>Data types</li>
+                        <li>Operators</li>
+                        <li>Math operators</li>
+                        <li>Assignment operators and Comparison operators</li>
+
+                    </ul>
+
+                    <h4>We will be looking at an example of code in every section on at least one item explained.</h4>
+
+                    <code>
+            <h5>This is an example of how the code will look like. Example from <a href="https://javascript.info/types" target="_blank">JavaScript.info</a></h5>
+            let name = "John";<br>
+
+            embed a variable<br>
+            alert( `Hello, ${name}!` ); // Hello, John!<br>
+
+            embed an expression<br>
+            alert( `the result is ${1 + 2}` ); // the result is 3<br>
+            The expression inside ${…} is evaluated and the result becomes a part of the string.<br>
+            We can put anything there: a variable like name or an arithmetical expression like 1 + 2 or something more complex.<br><br>
+
+            Please note that this can only be done in backticks. Other quotes do not allow such embedding!<br>
+        </code>
+                </section>
+            </article>
+
+            <article>
+                <section class="main-section" id="Data_types">
+                    <header>
+                        <h2>Data types</h2>
+                    </header>
+                    <p>There are 7 data types that is commonly used in JavaScript.</p>
+                    <p>For "Object and Symbol" I suggest you have a look at <a href="https://javascript.info/types" target="_blank">JavaScript.info</a>.</p>
+                    <br>
+                    <p><strong>Number</strong> - That is any number - 1, 2, 3, 4, 5, 6, 7, 8, 9, 0.</p>
+                    <p><strong> String</strong> - A string can have one or more characters. Anything you type between <strong><u>inverted commas ("")</u></strong> will be a string<br> It can be alphabetical, numerical or special characters.</p>
+                    <p><strong>Boolean</strong> – This is used to test for true or false.</p>
+                    <p><strong>Null</strong> - used for unknown values.</p>
+                    <p><strong>Undefined</strong> - used for unassigned values.</p>
+                    <p><a href="https://javascript.info/types" target="_blank"><strong>Object</strong>  - for more complex data structures.</a></p>
+                    <p><a href="https://javascript.info/types" target="_blank"><strong>Symbol</strong>  - for unique identifiers.</a></p>
+
+                    <code>
+        <h4>Code example - See <a href="https://javascript.info/types" target="_blank">JavaScript.info</a> for more detail.</h4>
+        let myNumber = null;
+        let myNumber = "";
+        In both cases the value that is assigned to "myNumber" is unknown and can be assigned later
+        </code>
+                </section>
+            </article>
+
+            <article>
+                <section class="main-section" id="Comparison_operators">
+                    <header><h2>Comparison operators</h2></header>
+                    <p>Most of the comparison operators was thought to us while attending school.</p>
+                    <p>For the purpose of this document I will only list all the ones that is commonly used with one example of how to use it.</p>
+                    <p>I suggest you have a look at <a href="https:// https://javascript.info/comparison" target="_blank">JavaScript.info</a> where it is explained in much more detail and a lot of examples.</p>
+                    <h4>Comparison operators are used to check “Boleen “ – true or fals</h4>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Test</th>
+                            <th>Outcome</th>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>Equal to</td>
+                            <td>5==10</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>===</td>
+                            <td>Equal to (and same type)</td>
+                            <td>5==10</td>
+                            <td>False</td>
+                        </tr>
+
+                        <tr>
+                            <td>!=</td>
+                            <td>Not equal to</td>
+                            <td>5!=10</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>!==</td>
+                            <td>Not Identical</td>
+                            <td>10!==10</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>Greater than</td>
+                            <td>10>5</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>>=</td>
+                            <td>Greater than or equal</td>
+                            <td>10>=5</td>
+                            <td>True</td>
+                        </tr>
+
+                        <tr>
+                            <td>&lt</td>
+                            <td>Less than</td>
+                            <td>10&lt5</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>&lt=</td>
+                            <td>Less than or equal</td>
+                            <td>10&lt=5</td>
+                            <td>False</td>
+                        </tr>
+
+                    </table>
+                    <code>
+            <h4>Code example - See <a href="https:// https://javascript.info/comparison" target="_blank">JavaScript.info</a> for more detail.</h4>
+            alert( 2 > 1 );  // true (correct)<br>
+            alert( 2 == 1 ); // false (wrong)<br>
+            alert( 2 != 1 ); // true (correct)<br>
+        </code>
+                </section>
+            </article>
+
+            <article>
+                <section class="main-section" id="Math_operators">
+                    <header><h2>Math operators</h2></header>
+                    <p>For the purpose of this document I will only list all the ones that is commonly used with one example of how to use it.</p>
+                    <p>I suggest you have a look at <a href="https://guide.freecodecamp.org/javascript/arithmetic-operation/" target="_blank">FreeCodeCamp</a> where it is explained in much more detail and a lot of examples.</p>
+
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Test</th>
+                            <th>Outcome</th>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td>Addition</td>
+                            <td>5+10</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtraction</td>
+                            <td>10-5</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr>
+                            <td>*</td>
+                            <td>Multiplication</td>
+                            <td>5*10</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>Division</td>
+                            <td>50/10</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Modulus or remainder</td>
+                            <td>10%4</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+
+                    <code>
+        <h4>Code example - See <a href="https://guide.freecodecamp.org/javascript/arithmetic-operation/" target="_blank"> FreeCodeCamp</a> for more detail.</h4>
+            alert( 2 + 1 ); // 3<br>
+            alert( 2 - 1 ); // 1<br>
+            alert( 2 / 1 ); // 2<br>
+        
+        </code>
+                </section>
+            </article>
+
+            <article>
+                <section class="main-section" id="Assignment_operators">
+                    <header><h2>Assignment operators</h2></header>
+                    <p>For the purpose of this document I will only list all the ones that is commonly used with one example of how to use it.</p>
+                    <p>I suggest you have a look at <a href="https://javascript.info/operators#assignment" target="_blank"> JavaScript.info</a> where it is explained in much more detail and a lot of examples.</p>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Test</th>
+                            <th>Outcome</th>
+                        </tr>
+                        <tr>
+                            <td>=</td>
+                            <td> Set equal to</td>
+                            <td>A = B</td>
+                            <td>A = B</td>
+                        </tr>
+                        <tr>
+                            <td>+=</td>
+                            <td> Add and set equal to</td>
+                            <td>A += B</td>
+                            <td>A = A +B</td>
+                        </tr>
+
+                        <tr>
+                            <td>-=</td>
+                            <td> Subtract and set equal to</td>
+                            <td>A -= B</td>
+                            <td>A = A - B</td>
+                        </tr>
+                        <tr>
+                            <td>*=</td>
+                            <td>Multiply and set equal to </td>
+                            <td>A *= B</td>
+                            <td>A = A * B</td>
+                        </tr>
+                        <tr>
+                            <td>/=</td>
+                            <td>Divide and set equal to </td>
+                            <td>A /= B</td>
+                            <td>A = A / B</td>
+                        </tr>
+
+                        <tr>
+                            <td>%=</td>
+                            <td>Calculate remainder and set equal to</td>
+                            <td>A % B<td>
+                            <td>A = A % B</td>
+                        </tr>
+                    </table>
+
+                    <code>
+<h4>Code example - See <a href="https://javascript.info/operators#assignment" target="_blank">JavaScript.info</a> for more detail.</h4>
+        let a = 1;<br>
+        let b = 2;<br><br>
+
+        let c = 3 - (a = b + 1);<br>
+
+        alert( a ); // 3<br>
+        alert( c ); // 0<br>
+        
+        </code>
+                </section>
+            </article>
+        </main><!--main-->
+    </div><!--main with articles-->
+    <div class="footer">
+        <footer class="contactMe" id="contactMe">
+            <h3>Designed by Wim von Benecke +27 (0) 82 714 5656 &nbsp &nbsp &nbsp<a href="mailto:boneswvb@gmail.com">Email me for more details</a></h3>
+        </footer>
+        <!--footer-->
+    </div><!--footer-->
+</body>
+  
+  
+
+</body>
+
+</html>
